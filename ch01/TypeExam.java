@@ -5,16 +5,16 @@ public class TypeExam {
 	public static void main(String[] args) {
 		
 		byte bytevalue = 10 ;
-		int intvalue = bytevalue ; //ÀÚµ¿Å¸ÀÔº¯È¯
-		System.out.println(intvalue); //10ÀÌ Ãâ·Â
-		//byte bytevalue1= intvalue ; Å«Å¸ÀÔ¿¡¼­ ÀÛÀº Å¸ÀÔÀº ¿À·ù
+		int intvalue = bytevalue ; //ìë™íƒ€ì…ë³€í™˜
+		System.out.println(intvalue); //10ì´ ì¶œë ¥
+		//byte bytevalue1= intvalue ; í°íƒ€ì…ì—ì„œ ì‘ì€ íƒ€ì…ì€ ì˜¤ë¥˜
 		
-		char charvalue = '°¡' ;
+		char charvalue = 'ê°€' ;
 		intvalue = charvalue ;
-		System.out.println("°¡ÀÇ À¯´ÏÄÚµå °ª = " + intvalue);
+		System.out.println("ê°€ì˜ ìœ ë‹ˆì½”ë“œ ê°’ = " + intvalue);
 		
 		intvalue = 500 ;
-		long longvalue = intvalue ; //int(4)¸¦ Å«Å¸ÀÔÀÎ long(8)·Î º¯È¯
+		long longvalue = intvalue ; //int(4)ë¥¼ í°íƒ€ì…ì¸ long(8)ë¡œ ë³€í™˜
 		System.out.println(longvalue);
 		
 		intvalue = 200 ;

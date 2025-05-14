@@ -19,7 +19,7 @@ public class CharExam {
 		System.out.println(c2);
 		System.out.println(c3);
 		
-		char han1 = '∞°' ;
+		char han1 = 'Í∞Ä' ;
 		char han2 = 44032 ;
 		char han3 = '\uac00' ;
 		
@@ -27,9 +27,9 @@ public class CharExam {
 		System.out.println(han2);
 		System.out.println(han3);
 		
-		int unicode1 = '±Ë' ;
-		int unicode2 = '±‚' ;
-		int unicode3 = 'ø¯' ;
+		int unicode1 = 'ÍπÄ' ;
+		int unicode2 = 'Í∏∞' ;
+		int unicode3 = 'Ïõê' ;
 		
 		System.out.println(unicode1 );
 		System.out.println(unicode2 );
