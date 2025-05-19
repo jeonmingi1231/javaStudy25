@@ -9,4 +9,4 @@ JAVA는 17버전을 설치함.
 
 교재는 자바 마스터 교재를 사용함.
 
-![슬라이드2](https://github.com/user-attachments/assets/214abfb4-894d-41c1-ba8d-15ea8c8cdbc9)
+![슬라이드2](https://github.com/user-attachments/assets/fe43a8b7-939b-4718-a21d-bddbf44e8b4d)
