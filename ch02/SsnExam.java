@@ -16,25 +16,25 @@ public class SsnExam {
 		int num = Character.getNumericValue(ssn2);
 		
 		if(num % 2 == 0) {
-			System.out.println("남자");	
+			System.out.println("여자");	
 		} else if (num % 2 == 1 ) {
-			System.out.println("여자");
+			System.out.println("남자");
 		
 		} else {
 			System.out.println("다시 작성해주세요");
-		} // ���� ���� if�� ����
+		} 
 		
-		int year = Integer.parseInt(ssn.substring(0,2)); // �¾ �⵵ ����
+		int year = Integer.parseInt(ssn.substring(0,2));
 		
 		if(num == 1 || num == 2 || num == 5 || num == 6 ) {
 				System.out.println("나이는 " + (2023 - (1900 + year) + 1) + "입니다.");
 		} else if(num == 3 || num == 4 || num == 7 || num == 8 ) {
 				System.out.println("나이는" + (2023 - (2000 + year) + 1 ) + "입니다." );
 		} else {
-			System.out.println("�ٽ� �ۼ����ּ���.");
+			System.out.println("잘못입력하셨습니다.");
 		}	
 		
-		int month = Integer.parseInt(ssn.substring(2,4)); // �¾ �� ����
+		int month = Integer.parseInt(ssn.substring(2,4));
 		
 		if(month <= 0 || month >= 13) {
 			System.out.println("다시 작성해주세요.");
@@ -50,6 +50,6 @@ public class SsnExam {
 		}
 		
 
-	} //�޼ҵ� ��
+	} 
 
-} //Ŭ���� ��
+} 

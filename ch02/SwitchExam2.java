@@ -5,102 +5,101 @@ import java.util.Scanner;
 public class SwitchExam2 {
 
 	public static void main(String[] args) {
-		// SwitchExam ÀÀ¿ëÇÏ±â.
-		// Ãà±¸ ±¸´Ü È¨ÆäÀÌÁö ¸¸µé±â
+		
 		
 		Scanner input = new Scanner(System.in);
 		System.out.println("===========================");
-		System.out.println("mbcFC»çÀÌÆ®¿¡ ¿À½Å°ÍÀ» È¯¿µÇÕ´Ï´Ù.");
-		System.out.println("¾î¶² ¸Ş´º¸¦ È®ÀÎÇÒ±î¿ä?");
+		System.out.println("mbcFCì— ì˜¤ì‹ ê²ƒì„ í™˜ì˜í•©ë‹ˆë‹¤.");
+		System.out.println("ë¬´ì—‡ì„ í™•ì¸í•˜ì‹œê² ìŠµë‹ˆê¹Œ?");
 		System.out.println("a. player");
 		System.out.println("b. shop");
-		System.out.println("c. °í°´¼¾ÅÍ");
-		System.out.println("z. Ã¢ ´İ±â");
+		System.out.println("c. ê³ ê°ì„¼í„°");
+		System.out.println("z. í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
 		System.out.print("(a~z)>>>");
 		char site = input.next().charAt(0) ;
-		System.out.println("¼±ÅÃÇÑ ¹®ÀÚ : " + site);
+		System.out.println("ì…ë ¥í•˜ì‹  ëª©ë¡ìœ¼ë¡œ ë“¤ì–´ê°‘ë‹ˆë‹¤ : " + site);
 		
-		switch(site) { // if¹®À¸·Î º¯°æ½Ã if(site == a || site == A ){
+		switch(site) { // if(site == a || site == A ){
 		case 'a' :
 		case 'A' :
-			System.out.println("plyer ·Î ÁøÀÔÇÕ´Ï´Ù.");
-			System.out.println("1. ¼±¼ö´Ü");
-			System.out.println("2. ÄÚÄª ½ºÅÂÇÁ");
-			System.out.println("3. ÆÀ ½ºÅÂÇÁ");
+			System.out.println("plyer ëª©ë¡ìœ¼ë¡œ ì§„ì…í•©ë‹ˆë‹¤.");
+			System.out.println("1. ê³µê²©ìˆ˜ ëª©ë¡.");
+			System.out.println("2. ë¯¸ë“œí•„ë” ëª©ë¡");
+			System.out.println("3. ìˆ˜ë¹„ìˆ˜ ëª©ë¡");
 			System.out.print("(1~3)>>>");
 			int subSelete = input.nextInt() ;
-			switch(subSelete) { // »èÁ¦
+			switch(subSelete) { 
 			case 1 : // if(subSelete == 1) {
-				System.out.println("1. ¼±¼ö´Ü ¸ñ·ÏÀ¸·Î ÁøÀÔÇÕ´Ï´Ù.");
-				break; //»èÁ¦
+				System.out.println("1. ê³µê²©ìˆ˜ ëª©ë¡ìœ¼ë¡œ ì§„ì…í•©ë‹ˆë‹¤.");
+				break; 
 			case 2 : // else if (subSelete == 2) {
-				System.out.println("2. ÄÚÄª ½ºÅÂÇÁ ¸ñ·ÏÀ¸·Î ÁøÀÔÇÕ´Ï´Ù.");
-				break; //»èÁ¦
+				System.out.println("2. ë¯¸ë“œí•„ë” ëª©ë¡ìœ¼ë¡œ ì§„ì…í•©ë‹ˆë‹¤.");
+				break;
 			case 3 : // else if (subSelete == 3) {
-				System.out.println("3. ÆÀ ½ºÅÂÇÁ ¸ñ·ÏÀ¸·Î ÁøÀÔÇÕ´Ï´Ù.");	
-				break;//»èÁ¦
-			default : //µğÆúÆ® ´ë½Å else·Î ¾Æ´Ò¶§ÀÇ °ª ÀÔ·Â
-				System.out.println("(1~3)¸¸ ÀÔ·ÂÇØÁÖ¼¼¿ä. ");
-				System.out.println("¿Ã¹Ù¸£Áö¾ÊÀº ¹øÈ£ ÀÔ´Ï´Ù. Ã³À½ºÎÅÍ ´Ù½Ã ÇØÁÖ¼¼¿ä.");
+				System.out.println("3. ìˆ˜ë¹„ìˆ˜ ëª©ë¡ìœ¼ë¡œ ì§„ì…í•©ë‹ˆë‹¤.");	
+				break;
+			default : 
+				System.out.println("(1~3)ì„ ì„ íƒí•´ì£¼ì„¸ìš”. ");
+				System.out.println("ì˜ëª» ì…ë ¥ë˜ì—ˆìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì‹¤í–‰í•´ ì£¼ì„¸ìš”.");
 			}
 		
-			break;//»èÁ¦
-		case 'b' : // switch ¹®À» if/else¹®À¸·Î º¯°æÇÏ±â.
+			break;
+		case 'b' : 
 		case 'B' :
-			System.out.println("shop À¸·Î ÁøÀÔÇÕ´Ï´Ù.");
-			System.out.println("1. Æ¼ÄÏ");
-			System.out.println("2. À¯´ÏÆû");
-			System.out.println("3. ±ÂÁî");
+			System.out.println("shop ëª©ë¡ìœ¼ë¡œ ì§„ì…í•©ë‹ˆë‹¤.");
+			System.out.println("1. ìœ ë‹ˆí¼ êµ¬ë§¤");
+			System.out.println("2. í‹°ì¼“ êµ¬ë§¤");
+			System.out.println("3. êµ¿ì¦ˆ êµ¬ë§¤");
 			System.out.print("(1~3)>>>");
 			int subSelete2 = input.nextInt() ;
 			
-			if (subSelete2 == 1) { // case ´ë½Å if·Î ÇØ¼­ ¸ÕÀú 1¹ø°ªÀ» true·Î ¹Ù²ãÁØ´Ù
+			if (subSelete2 == 1) { 
 			
-				System.out.println("1. Æ¼ÄÏ ¸ñ·ÏÀ¸·Î ÁøÀÔÇÕ´Ï´Ù.");
+				System.out.println("1. ìœ ë‹ˆí¼ êµ¬ë§¤ ëª©ë¡ìœ¼ë¡œ ì§„ì…í•©ë‹ˆë‹¤.");
 			
-			}else if (subSelete2 == 2) { // 1¹ø°ªÀÌ ¾Æ´Ò¶§ 2¹ø°ªÀÌ true°¡ µÇ°Ô else if¸¦ ½áÁØ´Ù.
-				System.out.println("2. À¯´ÏÆû ¸ñ·ÏÀ¸·Î ÁøÀÔÇÕ´Ï´Ù.");
+			}else if (subSelete2 == 2) { 
+				System.out.println("2. í‹°ì¼“ êµ¬ë§¤ ëª©ë¡ìœ¼ë¡œ ì§„ì…í•©ë‹ˆë‹¤.");
 				
-			}else if (subSelete2 == 3) { // 1,2¹ø °ªÀÌ ¾Æ´Ò¶§ 3¹øÀÌ true°¡ µÇ°Ô else if¸¦ ½áÁØ´Ù.
-				System.out.println("3. ±ÂÁî ¸ñ·ÏÀ¸·Î ÁøÀÔÇÕ´Ï´Ù.");	
+			}else if (subSelete2 == 3) { 
+				System.out.println("3. êµ¿ì¦ˆ êµ¬ë§¤ ëª©ë¡ìœ¼ë¡œ ì§„ì…í•©ë‹ˆë‹¤.");	
 				
-			}else { //¼Â´Ù ¾Æ´Ò °æ¿ì°¡ ÀÖÀ¸¹Ç·Î else·Î ½áÁØ´Ù.
-				System.out.println("(1~3)¸¸ ÀÔ·ÂÇØÁÖ¼¼¿ä. ");
-				System.out.println("¿Ã¹Ù¸£Áö¾ÊÀº ¹øÈ£ ÀÔ´Ï´Ù. Ã³À½ºÎÅÍ ´Ù½Ã ÇØÁÖ¼¼¿ä.");
+			}else { 
+				System.out.println("(1~3)ì„ ì„ íƒí•´ì£¼ì„¸ìš”. ");
+				System.out.println("ì˜ëª» ì…ë ¥ë˜ì—ˆìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì‹¤í–‰í•´ ì£¼ì„¸ìš”.");
 			}
 			break;
 		case 'c' :
 		case 'C' :
-			System.out.println("°í°´¼¾ÅÍ ·Î ÁøÀÔÇÕ´Ï´Ù.");
-			System.out.println("1. ¿Â¶óÀÎ »ó´ã");
-			System.out.println("2. ÀüÈ­ »ó´ã");
-			System.out.println("3. °Ô½ÃÆÇ");
+			System.out.println("ê³ ê°ì„¼í„° ëª©ë¡ìœ¼ë¡œ ì§„ì…í•©ë‹ˆë‹¤.");
+			System.out.println("1. ì˜¨ë¼ì¸ ìƒë‹´");
+			System.out.println("2. ì „í™” ìƒë‹´");
+			System.out.println("3. ê²Œì‹œíŒ");
 			System.out.print("(1~3)>>>");
 			int subSelete3 = input.nextInt() ;
 			switch(subSelete3) {
 			case 1 :
-				System.out.println("1. ¿Â¶óÀÎ »ó´ã ¸ñ·ÏÀ¸·Î ÁøÀÔÇÕ´Ï´Ù.");
+				System.out.println("1. ì˜¨ë¼ì¸ ìƒë‹´ ëª©ë¡ìœ¼ë¡œ ì§„ì…í•©ë‹ˆë‹¤.");
 				break;
 			case 2 :
-				System.out.println("2. ÀüÈ­ »ó´ã ¸ñ·ÏÀ¸·Î ÁøÀÔÇÕ´Ï´Ù.");
+				System.out.println("2. ì „í™” ìƒë‹´ ëª©ë¡ìœ¼ë¡œ ì§„ì…í•©ë‹ˆë‹¤.");
 				break;
 			case 3 :
-				System.out.println("3. °Ô½ÃÆÇ ¸ñ·ÏÀ¸·Î ÁøÀÔÇÕ´Ï´Ù.");	
+				System.out.println("3. ê²Œì‹œíŒ ëª©ë¡ìœ¼ë¡œ ì§„ì…í•©ë‹ˆë‹¤.");	
 				break;
 			default :
-				System.out.println("(1~3)¸¸ ÀÔ·ÂÇØÁÖ¼¼¿ä. ");
-				System.out.println("¿Ã¹Ù¸£Áö¾ÊÀº ¹øÈ£ ÀÔ´Ï´Ù. Ã³À½ºÎÅÍ ´Ù½Ã ÇØÁÖ¼¼¿ä.");
-			}	//°ıÈ£ ´İ±â.
+				System.out.println("(1~3)ì„ ì„ íƒí•´ì£¼ì„¸ìš”. ");
+				System.out.println("ì˜ëª» ì…ë ¥ë˜ì—ˆìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì‹¤í–‰í•´ ì£¼ì„¸ìš”.");
+			}	
 			break;
 			
 		case 'z' :
 		case 'Z' :
-			System.out.println("Ã¢ À» ´İ½À´Ï´Ù.");
+			System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 			break;	
 		
 		default :
-			System.out.println("¸Ş´º¿¡ ¾ø´Â ¹®ÀÚ¸¦ ³Ö¾ú½À´Ï´Ù.");
-			System.out.println("ÇÁ·Î±×·¥À» ´Ù½Ã ½ÇÇàÇØ ÁÖ¼¼¿ä.");
+			System.out.println("ì˜ëª» ì…ë ¥ë˜ì—ˆìŠµë‹ˆë‹¤.");
+			System.out.println("ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.");
 			break;
 		
 		}

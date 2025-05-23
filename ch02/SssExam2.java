@@ -5,11 +5,9 @@ import java.util.Scanner;
 public class SssExam2 {
 
 	public static void main(String[] args) {
-		// ÁÖ¹Î¹øÈ£ 8¹øÂ° ±ÛÀÚ¸¦ ÃßÃâÇÏ¿© ³²¿©¸¦ ±¸ºĞÇÑ´Ù.
-		// .charAt(¼ıÀÚ) -> ¹®ÀÚ¿­Áß¿¡ ¼ıÀÚ¿¡ ÇØ´çÇÏ´Â ¹®ÀÚ¸¦ ÃßÃâÇÑ´Ù.
 		
 		Scanner in = new Scanner(System.in);
-		System.out.print("´ç½ÅÀÇ ÁÖ¹Î¹øÈ£¸¦ ÀÔ·ÂÇÏ½Ã¿À. >>");
+		System.out.print("ë‹¹ì‹ ì˜ ì£¼ë¯¼ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì‹œì˜¤>>");
 		String regNo = in.next() ;
 		char gender = regNo.charAt(7) ;
 		
@@ -17,16 +15,16 @@ public class SssExam2 {
 		
 		switch(gender) {
 		case '1' : case '3' : case '5' : case '7' :
-			System.out.println("´ç½ÅÀº ³²ÀÚÀÔ´Ï´Ù.");
+			System.out.println("ë‹¹ì‹ ì€ ë‚¨ìì…ë‹ˆë‹¤.");
 			break ;
 			
 		case '2' : case '4' : case '6' : case '8' :	
-			System.out.println("´ç½ÅÀº ¿©ÀÚÀÔ´Ï´Ù.");
+			System.out.println("ë‹¹ì‹ ì€ ì—¬ìì…ë‹ˆë‹¤.");
 			break ;
 			
 		default :
-			System.out.println("´ç½ÅÀº ¿Ü°èÀÎÀÔ´Ï´Ù.!!!");
-			System.out.println("´ç½ÅÀÇ º°·Î µ¹¾Æ°¡¼¼¿ä!!!");
+			System.out.println("ë‹¹ì‹ ì€ ì™¸ê³„ì¸ ì…ë‹ˆë‹¤.!!!");
+			System.out.println("ë‹¹ì‹ ì˜ ë³„ë¡œ ëŒì•„ê°€ì„¸ìš”!!!!");
 		}
 	}
 

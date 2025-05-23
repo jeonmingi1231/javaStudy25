@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class LotooExam {
 
 	public static void main(String[] args) {
-		// �ζ� ���α׷� �����
+		
 		
 		
 		

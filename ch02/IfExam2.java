@@ -15,21 +15,21 @@ public class IfExam2 {
 		
 		System.out.println("점수를 입력하세요");
 		System.out.print("국어 : ");
-	    int kor = input.nextInt(); { //���� ���� �Է�
+	    int kor = input.nextInt(); {
 	    if(kor < 0 || kor >100) {
-	    	System.out.println("다시입력해주세요."); //���� ����
+	    	System.out.println("다시입력해주세요."); 
 	    }
 		
 	   System.out.print("수학 : ");
 	   int mat = input.nextInt();
 	   if(mat < 0 ||mat > 100) {
-		   System.out.println("다시입력해주세요."); //���� ����
+		   System.out.println("다시입력해주세요."); 
 	   }
 		
 	   System.out.print("영어 : ");
 	   int eng = input.nextInt();
 	   if(eng < 0 || eng > 100) {
-		   System.out.println("다시입력해주세요."); //���� ���� 
+		   System.out.println("다시입력해주세요."); 
 	   }
 		
 	   int total = kor + mat + eng ;

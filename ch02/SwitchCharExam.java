@@ -5,53 +5,52 @@ import java.util.Scanner;
 public class SwitchCharExam {
 
 	public static void main(String[] args) {
-		// ´ë¼Ò¹®ÀÚÀÇ ÀÔ·Â¿¡ µû¸¥ µî±Ş Ãâ·Â
-		// switch¹®Àº µ¿µîºñ±³ ¿¬»êÀÚ·Î ¹®ÀÚ(char)µµ µ¿µîºñ±³ ÇÒ¼öÀÖ´Ù.
+		
 	 
 		Scanner inChar = new Scanner(System.in);
 		
-		System.out.print("È¸¿ø µî±ŞÀ» ÀÔ·ÂÇÏ¼¼¿ä (A~C) : "); // print(ln)±îÁö ¾²¸é ¹Ø¿¡ÁÙ·Î ³Ñ¾î°¡´Ï±î ln»©±â
+		System.out.print("íšŒì› ë“±ê¸‰ì„ ì…ë ¥í•˜ì„¸ìš” (A~C) : "); 
 		
-		//String gradeStr = inChar.next() ; // ¹®ÀÚ¿­·Î µ¥ÀÌÅÍ¸¦ ÀÔ·Â¹Ş¾Æ String ¿¡ ³ÖÀ½
-		//char gradeChr = gradeStr.charAt(0); //¹®ÀÚ¿­ 0¹ø ÀÎµ¦½º ¹®ÀÚ¸¦ char Å¸ÀÔ º¯¼ö¿¡ ³ÖÀ½.
+		//String gradeStr = inChar.next() ; 
+		//char gradeChr = gradeStr.charAt(0); 
 		
-		char gradeChaStr = inChar.next().charAt(0); //¹®ÀÚ¿­·Î ¹ŞÀº °ªÀ» ¹®ÀÚ Ã³¸®ÇÔ.
-		System.out.println("°ËÁõÄÚµå¿ë(1ÁÙ) : " + gradeChaStr) ; 
+		char gradeChaStr = inChar.next().charAt(0); 
+		System.out.println("ê²€ì¦ ì½”ë“œìš©(1ì¤„) : " + gradeChaStr) ; 
 	 
 		switch(gradeChaStr) { 
 		
 		case 'a' :
 		case 'A' :
-			System.out.println("¿ì¼öÈ¸¿ø ÀÔ´Ï´Ù.");
+			System.out.println("ìš°ìˆ˜íšŒì› ì…ë‹ˆë‹¤.");
 			break ;
 		case 'b' :
 		case 'B' :
-			System.out.println("ÀÏ¹İÈ¸¿ø ÀÔ´Ï´Ù.");
+			System.out.println("ì¼ë°˜íšŒì› ì…ë‹ˆë‹¤.");
 			break ;
 		case 'c' :
 		case 'C' :
-			System.out.println("»ç¾÷ÀÚÈ¸¿ø ÀÔ´Ï´Ù.");
+			System.out.println("ì‚¬ì—…ìíšŒì› ì…ë‹ˆë‹¤.");
 			break ;	
 		
 		default :
-			System.out.println("¼Õ´Ô Ã³À½ ÀÌ½Ê´Ï±î?");
-			System.out.println("È¸¿ø °¡ÀÔ ÇÏ½Ã·Á¸é Yes ¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä.");
+			System.out.println("ì†ë‹˜ ì²˜ìŒ ì´ì‹­ë‹ˆê¹Œ?");
+			System.out.println("íšŒì› ê°€ì… í•˜ì‹œë ¤ë©´ Yesë¥¼ ì…ë ¥í•´ ì£¼ì„¸ìš”.");
 			String newMember = inChar.next() ;
 			if(newMember.equalsIgnoreCase("yes")) {
-				System.out.println("È¸¿ø°¡ÀÔÀ» ÁøÇàÇÕ´Ï´Ù.");
-				System.out.print("¾ÆÀÌµğ : ");
+				System.out.println("íšŒì›ê°€ì…ì„ ì§„í–‰í•©ë‹ˆë‹¤.");
+				System.out.print("ì•„ì´ë”” : ");
 				String id = inChar.next() ;
-				System.out.println(id + "´Ô È¸¿ø°¡ÀÔÀ» ÃàÇÏµå¸³´Ï´Ù.");
+				System.out.println(id + "ë‹˜ íšŒì›ê°€ì…ì„ ì¶•í•˜ë“œë¦½ë‹ˆë‹¤.");
 				break ;
 			}else {
-				System.out.println("¾È³çÈ÷ °¡¼¼¿ä !! ´ÙÀ½ ±âÈ¸¿¡ ºË°Ú½À´Ï´Ù.");
-				System.out.println("´Ü, µÎ¹ø ´Ù½Ã ¸ø ºÉ ¼öµµ ÀÖ½À´Ï´Ù.");
+				System.out.println("ì•ˆë…•íˆ ê°€ì„¸ìš”! ë‹¤ìŒ ê¸°íšŒì— ëµ™ê² ìŠµë‹ˆë‹¤.");
+				System.out.println("ë‹¨, ë‘ë²ˆ ë‹¤ì‹œ ëª» ëµ ìˆ˜ë„ ìˆìŠµë‹ˆë‹¤.");
 				break ;
-			} // È¸¿ø°¡ÀÔ if¹® Á¾·á.
+			} //íšŒì›ê°€ì… ifë¬¸ ì¢…ë£Œ
 			
 		
 
-} //switch ¹® Á¾·á
+} //ìŠ¤ìœ„ì¹˜ ë¬¸ ì¢…ë£Œ
 	
 	
 	}

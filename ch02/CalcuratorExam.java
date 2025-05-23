@@ -14,25 +14,24 @@ public class CalcuratorExam {
 		int x4 = 0;
 		x4 = x1 + x3;
 		return x4;
-	}// plus M end
-
+	}// plus 메서드 종료
 	static int minus(int x1, int x3) {
 		int x4 = 0;
 		x4 = x1 - x3;
 		return x4;
-	}// minus M end
+	}// minus 메서드 종료
 
 	static int times(int x1, int x3) {
 		int x4 = 0;
 		x4 = x1 * x3;
 		return x4;
-	}// times M end
+	}// times 메서드 종료
 
 	static int divide(int x1, int x3) {
 		int x4 = 0;
 		x4 = x1 / x3;
 		return x4;
-	}// divide M end
+	}// divide 메서드 종료
 
 	public static void main(String[] args) {
 
@@ -106,6 +105,6 @@ public class CalcuratorExam {
 
 		} // while(run1) 문 end
 
-	}// main M end
+	}// main 메서드 종료
 
 }// class end
